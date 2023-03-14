@@ -40,7 +40,7 @@ rules:
   - "MATCH,DIRECT"
 ```
 
-除此外，还可以添加`dns/hosts`字段，但在使用 CFW 时不建议添加
+除此外，还可以添加`tun/dns/hosts`等字段，但在使用 CFW 时不建议添加
 
 ## 加载过程
 
@@ -54,7 +54,28 @@ CFW 启动流程如下：
 
 步骤 1 完成后，Clash 会按照 config.yaml 设置启动
 
-步骤 2 完成后，用户配置文件里的`proxies/proxy-providers/proxy-groups/rule-providers/rules/dns`这几个字段的内容会被替换到 Clash 里面，除了上面这几个字段，其他的内容均不会替换（这就是 Profiles 里配置文件可以不完整的原因）
+步骤 2 完成后，用户配置文件中以下字段的内容会被提交至 Clash 核心并替换原有字段（这就是 Profiles 里配置文件可以不完整的原因）
+
+- proxies
+- proxy-providers
+- proxy-groups
+- rule-providers
+- rules
+- tun
+- dns
+- hosts
+
+::: notice
+如果`TUN Mode`和`Mixin`中配置了对应字段，用户配置文件中的字段也会被覆盖。
+
+配置优先级`Mixin`>`TUN Mode`>`Profile`
+:::
+
+::: notice
+从`0.20.7`开始，可点击 Clash Core 右侧的按钮检查最终提交至 Clash 核心的用户配置文件
+
+![](~@imgs/preview-profile.png)
+:::
 
 ### 原因
 
