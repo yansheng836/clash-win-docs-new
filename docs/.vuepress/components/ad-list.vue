@@ -24,7 +24,7 @@ export default {
           img: "https://clash01.youbbv.com/speedcat-banner.jpg",
         },
         {
-          url: "https://jkcloud.net",
+          url: "https://jk-cloud.net",
           img: "https://sadwadhoa.oss-cn-shanghai.aliyuncs.com/ad.jpg",
         },
       ],
