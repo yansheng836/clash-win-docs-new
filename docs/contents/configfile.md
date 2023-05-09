@@ -65,13 +65,13 @@ CFW 启动流程如下：
 - dns
 - hosts
 
-::: notice
+::: tip
 如果`TUN Mode`和`Mixin`中配置了对应字段，用户配置文件中的字段也会被覆盖。
 
 配置优先级`Mixin`>`TUN Mode`>`Profile`
 :::
 
-::: notice
+::: tip
 从`0.20.7`开始，可点击 Clash Core 右侧的按钮检查最终提交至 Clash 核心的用户配置文件
 
 ![](~@imgs/preview-profile.png)
