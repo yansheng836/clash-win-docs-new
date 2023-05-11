@@ -72,6 +72,7 @@ module.exports = {
           "/contents/actions",
           "/contents/diff",
           "/contents/lightweight",
+          "/contents/ssid",
           "/contents/dhcp",
           "/contents/tray",
           "/contents/profilespath",
