@@ -23,10 +23,6 @@ export default {
           url: "https://clash01.youbbv.com/auth/register?code=gYgD",
           img: "https://clash01.youbbv.com/speedcat-banner.jpg",
         },
-        {
-          url: "https://jk-cloud.net",
-          img: "https://sadwadhoa.oss-cn-shanghai.aliyuncs.com/ad.jpg",
-        },
       ],
     };
   },
